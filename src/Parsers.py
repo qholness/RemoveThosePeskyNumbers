@@ -23,10 +23,10 @@ def ParseArgs(head, config, verbose, replace):
         a=AllowedExtensions, v=VERBOSE, r=replace)
 
 
-def ParseConfig(config):
+def ParseConfig(configfilepath):
     global AllowedExtensions
     config = configparser.ConfigParser()
-    config.read("./config.ini")
+    config.read(configfilepath)
     AllowedExtensions = list(map(
         lambda x: x.replace(" ", ""),
         config['Extensions']['Allowed'].split(",")))
