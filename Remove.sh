@@ -1,1 +1,1 @@
-python ./EditFiles.py --head $1 --verbose --replace
+python ./EditFiles.py --head $1 --config ./src/config.ini --verbose --replace
