@@ -1,1 +1,1 @@
-python ./run.py --head $1 --config ./src/config.ini
+python ./run.py --head $1 --config ./src/config.ini --verbose --replace
